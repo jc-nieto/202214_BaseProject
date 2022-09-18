@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { ClubEntity } from 'src/club/club.entity';
-import { ClubService } from 'src/club/club.service';
-import { MemberEntity } from 'src/member/member.entity';
-import { MemberService } from 'src/member/member.service';
+import { ClubEntity } from '../club/club.entity';
+import { ClubService } from '../club/club.service';
+import { MemberEntity } from '../member/member.entity';
+import { MemberService } from '../member/member.service';
 import {
   BusinessError,
   BusinessLogicException,
-} from 'src/shared/errors/business-errors';
+} from '../shared/errors/business-errors';
 import { Repository } from 'typeorm';
 
 @Injectable()

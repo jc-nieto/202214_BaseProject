@@ -6,5 +6,6 @@ import { ClubService } from './club.service';
 @Module({
   imports: [TypeOrmModule.forFeature([ClubEntity])],
   providers: [ClubService],
+  exports: [ClubService],
 })
 export class ClubModule {}

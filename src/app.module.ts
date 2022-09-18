@@ -12,6 +12,7 @@ import { ClubMemberModule } from './club-member/club-member.module';
   imports: [
     MemberModule,
     ClubModule,
+    ClubMemberModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -24,7 +25,6 @@ import { ClubMemberModule } from './club-member/club-member.module';
       synchronize: true,
       keepConnectionAlive: true,
     }),
-    ClubMemberModule,
   ],
   controllers: [AppController],
   providers: [AppService],
