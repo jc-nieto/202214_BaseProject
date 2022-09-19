@@ -9,6 +9,7 @@ import { ClubMemberController } from './club-member.controller';
 
 @Module({
   providers: [ClubMemberService],
+  exports: [ClubMemberService],
   imports: [
     TypeOrmModule.forFeature([ClubEntity, MemberEntity]),
     ClubModule,

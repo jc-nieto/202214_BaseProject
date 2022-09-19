@@ -15,7 +15,7 @@ import { MemberEntity } from 'src/member/member.entity';
 import { BusinessErrorsInterceptor } from 'src/shared/interceptors/business-errors.interceptor';
 import { ClubMemberService } from './club-member.service';
 
-@Controller('club-member')
+@Controller('clubs')
 @UseInterceptors(BusinessErrorsInterceptor)
 export class ClubMemberController {
   constructor(private readonly clubMemberService: ClubMemberService) {}

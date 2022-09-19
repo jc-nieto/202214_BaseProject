@@ -14,9 +14,9 @@ import { Repository } from 'typeorm';
 export class ClubMemberService {
   constructor(
     @InjectRepository(ClubEntity)
-    private readonly clubRepository: Repository<ClubEntity>,
+    private clubRepository: Repository<ClubEntity>,
     @InjectRepository(MemberEntity)
-    private readonly memberRepository: Repository<MemberEntity>,
+    private memberRepository: Repository<MemberEntity>,
     private clubService: ClubService,
     private memberService: MemberService,
   ) {}

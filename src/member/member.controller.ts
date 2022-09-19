@@ -16,7 +16,7 @@ import { MemberEntity } from './member.entity';
 import { plainToInstance } from 'class-transformer';
 
 @UseInterceptors(BusinessErrorsInterceptor)
-@Controller('member')
+@Controller('members')
 export class MemberController {
   constructor(private readonly memberService: MemberService) {}
 
