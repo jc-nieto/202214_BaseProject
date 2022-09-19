@@ -11,16 +11,12 @@ import {
 export class ClubEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string;
-
   @Column()
   name: string;
-
   @Column()
   fundationDate: string;
-
   @Column()
   url_image: string;
-  
   @Column()
   description: string;
 
